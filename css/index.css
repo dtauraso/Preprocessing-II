@@ -168,11 +168,11 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-header {
+.NavBar {
   display: flex;
   justify-content: space-between;
 }
-header .nav {
+.NavBar .nav {
   width: 50%;
   display: flex;
   justify-content: space-around;
@@ -237,4 +237,12 @@ header .nav {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  width: 70%;
+  background-color: darkslategray;
+  padding: 5%;
+  color: white;
+  border-radius: 15%;
+  outline: none;
 }
