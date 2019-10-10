@@ -201,7 +201,7 @@ img {
   }
 }
 .LongDottedLine .NavBar .nav .NavLink {
-  color: black;
+  color: #212529;
   font-size: 1.5rem;
   text-decoration: none;
 }
@@ -219,12 +219,14 @@ img {
 .home {
   width: 80%;
 }
+@media (max-width: 500px) {
+}
 .home .header {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
 .home .header .text-content {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .home .content-section {
   margin: 30px 0;
@@ -276,23 +278,36 @@ img {
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
+  padding-bottom: 30px;
+  border-bottom: 2px dashed #C0C0C0;
 }
 .home .content-destination img {
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .content-destination h2 {
+    font-size: 3rem;
+  }
+}
 .home .content-pick {
-  padding-top: 30px;
-  border-top: 2px dashed #C0C0C0;
+  width: 110%;
   display: flex;
   justify-content: space-between;
 }
 @media (max-width: 500px) {
   .home .content-pick {
     flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
   }
 }
 .home .content-pick .destination {
-  width: 30%;
+  width: 33%;
   margin-bottom: 30px;
 }
 @media (max-width: 500px) {
@@ -301,22 +316,22 @@ img {
   }
 }
 .home .content-pick .destination .btn {
-  width: 70%;
-  background-color: darkslategray;
+  width: 95%;
+  background-color: #0c7585;
   padding: 5%;
-  color: white;
-  border-radius: 15%;
+  color: #FFFFFF;
+  border-radius: 15px;
   outline: none;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
     width: 100%;
-    background-color: mediumblue;
-    padding: 5%;
-    color: white;
-    border-radius: 15%;
+    background-color: #17A2B8;
+    padding: 3%;
+    color: #FFFFFF;
+    border-radius: 15px;
     outline: none;
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 }

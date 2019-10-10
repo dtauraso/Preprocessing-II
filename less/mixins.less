@@ -1,11 +1,11 @@
 // Mixins in here
-.button(@color, @width, @font_size)
+.button(@color, @width, @font_size, @padding)
 {
     width: @width;
     background-color: @color;
-    padding: 5%;
-    color: white;
-    border-radius: 15%;
+    padding: @padding;
+    color: @white;
+    border-radius: 15px;
     outline: none;
     font-size: @font_size;
 }
