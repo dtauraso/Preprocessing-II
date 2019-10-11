@@ -219,8 +219,6 @@ img {
 .home {
   width: 80%;
 }
-@media (max-width: 500px) {
-}
 .home .header {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
@@ -278,8 +276,12 @@ img {
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
-  padding-bottom: 30px;
-  border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    padding-bottom: 30px;
+    border-bottom: 2px dashed #C0C0C0;
+  }
 }
 .home .content-destination img {
   border-radius: 10px;
@@ -299,11 +301,19 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 900px) {
+  .home .content-pick {
+    padding-top: 30px;
+    border-top: 2px dashed #C0C0C0;
+  }
+}
 @media (max-width: 500px) {
   .home .content-pick {
     flex-direction: column;
     width: 80%;
     margin: 0 auto;
+    padding-top: 0px;
+    border-top: 0px dashed #C0C0C0;
   }
 }
 .home .content-pick .destination {
